@@ -1,6 +1,6 @@
 import os
 
-for root, dirs, files in os.walk('C:/Users/Naro/Desktop/project/yc_court'):
+for root, dirs, files in os.walk('C:/Users/Naro/Desktop/project/yc_court'): #Your django project directory
     if 'migrations' in dirs and 'venv' not in root:
         migrations = os.path.join(root, 'migrations')
         for file in os.listdir(migrations):
